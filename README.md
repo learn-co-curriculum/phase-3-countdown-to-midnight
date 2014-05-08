@@ -10,8 +10,7 @@ Everyone loves a good countdown to midnight on New Year's Eve. Let's build our o
 
 This lab is going to test your skills in writing while loops. Remember, a while loop will execute your block of code only while your defined requirement is fulfilled. 
 
-For example:
-
+For example, this script:
 ```RUBY
 x = 1
 while x < 10
@@ -19,10 +18,26 @@ while x < 10
   x += 1
 end
 ```
+Will print this:
+```
+1 is less than 10
+2 is less than 10
+3 is less than 10
+4 is less than 10
+5 is less than 10
+6 is less than 10
+7 is less than 10
+8 is less than 10
+9 is less than 10
+```
+And return `nil`
+```
+=> nil
+```
 
 The `#{}` is a called interpolation. In this case, it's going to actually print out the value of x. If we just wrote `puts "x is less than 10"` it would print out the letter x instead of the number x is representing.
 
-The `+=` is a form of iteration. It's basically saying the original value of x is one, but add 1 to that value every time we loop through this block. The loop is going to stop executing as soon as we hit 10 (that was the condition we set). You can also use `-=` which would subtract incrementally with every trip through the loop.
+The `+=` is a form of iteration. It's basically saying the original value of x is one, but add 1 to that value every time we loop through this block, `x += 1` is the same as `x = x + 1`. The loop is going to stop executing as soon as we hit 10 (that was the condition we set). You can also use `-=` which would subtract incrementally with every trip through the loop.
 
 You'll want to use the `coundtown_spec.rb` located in the `spec` directory to help you determine functionality. Write your code in `countdown.rb`.
 
