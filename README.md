@@ -30,10 +30,7 @@ Will print this:
 8 is less than 10
 9 is less than 10
 ```
-And return `nil`
-```
-=> nil
-```
+And return `nil`.
 
 The `#{}` is a called interpolation. In this case, it's going to actually print out the value of x. If we just wrote `puts "x is less than 10"` it would print out the letter x instead of the number x is representing.
 
