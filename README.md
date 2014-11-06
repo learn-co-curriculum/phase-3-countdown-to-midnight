@@ -1,5 +1,5 @@
 ---
-tags: loops, default arguments, kids
+tags: loops, default arguments
 language: ruby
 ---
 
