@@ -11,7 +11,7 @@ Everyone loves a good countdown to midnight on New Year's Eve. Let's build our o
 This lab is going to test your skills in writing while loops. Remember, a while loop will execute your block of code only while your defined requirement is fulfilled. 
 
 For example, this script:
-```RUBY
+```ruby
 x = 1
 while x < 10
   puts "#{x} is less than 10"
@@ -19,7 +19,7 @@ while x < 10
 end
 ```
 Will print this:
-```
+```ruby
 1 is less than 10
 2 is less than 10
 3 is less than 10
