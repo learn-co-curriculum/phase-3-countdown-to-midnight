@@ -3,7 +3,7 @@ tags: loops, default arguments
 language: ruby
 ---
 
-#Countdown to midnight
+#Countdown to Midnight
 
 Everyone loves a good countdown to midnight on New Year's Eve. Let's build our own! 
 
