@@ -42,4 +42,6 @@ You'll want to use the `coundtown_spec.rb` located in the `spec` directory to he
 
 2. Our Ruby program executes so quickly that it doesn't actually count down at the speed of 1 second per number. See if you can make the loop pause for one second each trip around. (hint: http://stackoverflow.com/questions/1329967/tell-ruby-program-to-wait-some-amount-of-time). You will want to do this in a new method. Take a look at `countdown_spec.rb` line 12 to see what your method should be called.
 
+## Resources
 
+[About.com on Loops in Ruby](http://ruby.about.com/od/rubyfeatures/a/loops_2.htm)
