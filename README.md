@@ -1,12 +1,15 @@
-#Countdown to Midnight
+# Countdown to Midnight
 
 ## Objectives
 
 1. Practice building a `while` loop
-2. Practice using the `-=`, the inverse of the `+=` that we've already discussed. 
+2. Practice using the subtract-and-assign operator (`-=`)—the inverse of the add-and-assign operator (`+=`). 
 
-## `while` reminders
-This lab is going to test your skills in writing while loops. Remember, a while loop will execute your block of code only while your defined requirement is fulfilled. 
+## Review 
+
+#### On `while` Loops
+
+This lab is going to test your skills in writing `while` loops. Remember, a `while` loop will execute your block of code only *while* your defined conditional evaluates as `true`. 
 
 For example, this script:
 
@@ -17,10 +20,9 @@ while x < 10
   x += 1
 end
 ```
-
 Will print this:
 
-```ruby
+```
 1 is less than 10
 2 is less than 10
 3 is less than 10
@@ -33,20 +35,26 @@ Will print this:
 ```
 And return `nil`.
 
-**String Interpolation Refresher:** The `#{}` is a called interpolation. In this case, it's going to actually print out the value of x. If we just wrote `puts "x is less than 10"` it would print out the letter x instead of the number x is representing.
+#### String Interpolation
 
-**The `+=`:**  This is a form of incrementing values. It's basically saying the original value of x is one, but add 1 to that value every time we loop through this block.
+Using the `#{}` is a called interpolation. In this case, it's going to actually print out the value of `x`. If we just wrote `puts "x is less than 10"` it would print out the letter 'x' instead of the number `x` is representing.
 
- `x += 1` is the same as `x = x + 1`. The loop is going to stop executing as soon as we hit 10 (that was the condition we set). You can also use `-=` which would subtract incrementally with every trip through the loop.
+#### The Add-And-Assign Operator (`+=`)
+
+This is a shorthand useful for incrementing, or "stepping up", values. It's an operator that adds the submitting value to the value of `x`. In the example above `x` begins with a value of `1`, and is incremented by `1` each time the `while` loop runs. The line `x += 1` is the same as the line `x = x + 1`. 
+
+The loop is going to stop executing as soon as `x` hits `10`, since that was the condition that we set.
+
+#### The Subtract-And-Assign Operator (`-=`)
+
+We can also use the subtract-and-assign operator (`-=`) which instead *subtracts* the submitted value from the given variable and reassigns that variable to the resulting difference.
 
 ## Instructions
 
 1. Fork and clone this lab. 
 2. Open it in your text editor and run the test suite. You'll be coding your solution in `countdown.rb`
-1. Write a method that returns "HAPPY NEW YEAR!" that takes in an argument of an integer and uses a while loop to countdown from that integer to 0. 
-	* A method will return the very last line of code that it executes. You'll want to be able to pass any infinitely large number to your method as an argument and have it count down. Remember to use interpolation in creating your return value. You'll also want your loop to print out the "#{number} SECONDS!"
-
-2. Our Ruby program executes so quickly that it doesn't actually count down at the speed of 1 second per number. See if you can make the loop pause for one second each trip around. (hint: http://stackoverflow.com/questions/1329967/tell-ruby-program-to-wait-some-amount-of-time). You will want to do this in a new method. Take a look at `countdown_spec.rb` line 18 to see what your method should be called.
+3. Write a method that takes in an integer argument and uses a while loop to countdown from that integer to `0`, outputting `"#{number} SECOND(S)!"` in each iteration of the loop. The method should return `"HAPPY NEW YEAR!"` after the loop finishes. **Hint:** *In Ruby, a method will return the very last line of code that it executes.*
+4. Our Ruby program executes so quickly that it doesn't actually count down at the speed of one second per number. See if you can make the loop pause for one second each trip around ([hint](http://stackoverflow.com/questions/1329967/tell-ruby-program-to-wait-some-amount-of-time)). Write this in a new method called `countdown_with_sleep` that also takes one integer argument for the countdown.
 
 ## Resources
 
