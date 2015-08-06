@@ -41,7 +41,7 @@ end
 
 ### `#countdown_with_sleep`
 
-This method will also except an argument and countdown those seconds until we hit 0. The only difference will be, our method will use a ruby method called `sleep`. The `sleep(num_sec)` excepts an argument of seconds. In our `countdown_with_sleep` method we will pass in `1`.
+This method will also accept an argument and countdown those seconds until we hit 0. The only difference will be, our method will use a ruby method called `sleep`. The `sleep(num_sec)` accepts an argument of seconds. In our `countdown_with_sleep` method we will pass in `1`.
 
 
 ```ruby
