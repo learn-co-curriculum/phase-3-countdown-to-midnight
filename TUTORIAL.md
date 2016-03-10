@@ -84,13 +84,25 @@ Failures:
 
 This method will also accept an argument and countdown those seconds until we hit 0. 
 
-The hint in the `README` forward us to stackoverflow.com which tells us how to make our application sleep.
+The `README` specifically asked for the method to take a little bit longer to count down. If you take a look at the benchmark in the tests, you'll notice a benchmark:
+
+```ruby
+it 'should take at least 5 seconds to execute' do
+  runtime = Benchmark.measure { countdown_with_sleep(5) }
+  expect(runtime.real.to_i >= 5).to be true
+end
+```
+
+The hint in the `README` forwards us to stackoverflow.com which tells us how to make our application sleep.
 
 ```ruby
 sleep(num_secs)
 ```
 
-The `sleep(num_sec)` accepts an argument of seconds. In our `countdown_with_sleep` method we will pass in `1`, so our application will only sleep one second between the iterations. 
+
+The `sleep(num_sec)` accepts an argument of seconds. The Benchmark in the test is saying that if we pass in `5` has our method argument, the countdown should take 5 or more seconds.
+
+In our `countdown_with_sleep` method we will pass in `1` to the `sleep` method, so our application will only sleep one second between the iterations. 
 
 ```ruby
 def countdown_with_sleep(seconds_to_midnight)
