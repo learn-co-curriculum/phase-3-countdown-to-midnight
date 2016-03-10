@@ -3,3 +3,6 @@ tags:
   - default arguments
 languages:
   - ruby
+resources:
+ - 1
+
