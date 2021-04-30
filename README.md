@@ -1,9 +1,9 @@
-# Countdown to Midnight
+# Countdown to Midnight Lab
 
 ## Objectives
 
 1. Practice building a `while` loop
-2. Practice using the subtract-and-assign operator (`-=`)—the inverse of the add-and-assign operator (`+=`). 
+2. Practice using the subtract-and-assign operator (`-=`) — the inverse of the add-and-assign operator (`+=`). 
 
 ## Review 
 
